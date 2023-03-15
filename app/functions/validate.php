@@ -9,8 +9,8 @@ function validate(array $fields)
   foreach ($fields as $field => $type) {
     switch ($type) {
       case 's':
-        $strig = sanitizeString($request[$field]);
-        $validate[$field] = htmlspecialchars($strig, ENT_QUOTES);
+        $string = sanitizeString($request[$field]);
+        $validate[$field] = htmlspecialchars($string, ENT_QUOTES);
         break;
 
       case 'i':
