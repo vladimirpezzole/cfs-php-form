@@ -18,6 +18,7 @@ $validate = validate([
   'message' => 's',
 ]);
 
+
 $data = [
 	'quem' => $validate->email,
 	'para' => 'contato@devclass.com.br',

@@ -6,7 +6,8 @@
       "app/functions/validate.php",
       "app/functions/flash.php",
       "app/functions/credentials.php",
-      "app/functions/email.php"
+      "app/functions/email.php",
+      "app/functions/database.php"
     ]
   },
   "require": {
