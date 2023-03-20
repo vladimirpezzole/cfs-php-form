@@ -4,7 +4,8 @@ use function PHPSTORM_META\sql_injection_subst;
 
 function connect()
 {
-  $pdo = new \PDO("mysql:host=localhost;dbname=cfs-php-form;charset=utf8", 'vladimir', 'julia');
+
+  $pdo = new \PDO("mysql:host=localhost;dbname=cfs-php-form;charset=utf8", USER_DB, PWD_DB);
   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 

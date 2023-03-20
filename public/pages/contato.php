@@ -1,5 +1,9 @@
+<!-- contato -->
 <h2 class="alert alert-primary">Enviar Messagem</h2>
-<a href="?page=home" class="btn btn-info"><b>Home</b></a>
+<div class="d-flex justify-content-between">
+  <a href="/" class="btn btn-secondary"><b>Home</b></a>
+  <a href="https://mailtrap.io/inboxes/" target="_blank" class="btn btn-info"><b>mailtrap.io</b></a>
+</div>
 <hr>
 <?=get('message');?>
 

@@ -1,12 +1,20 @@
 <?php
-// Rename credentials-sample.php para credentials.php
-//
-// $emailHost = 'Seu HOST';
-// $emailUsername = 'Seu Username';
-// $emailPassword = 'Seu Password';
-// $myEmail = 'Seu Email';
+// *Rename credentials-sample.php para credentials.php
 
-$emailHost = 'Seu HOST';
-$emailUsername = 'Seu Username';
-$emailPassword = 'Seu Password';
-$myEmail = 'Seu Email';
+// // * To mailtrap.io >> 
+// define('MY_HOST', 'Seu HOST');
+// define('MY_USERNAME', 'Seu Username');
+// define('MY_PASSWORD', 'Seu Password');
+// define('MY_EMAIL', 'Seu Email');
+
+define('MY_HOST', 'Seu HOST');
+define('MY_USERNAME', 'Seu Username');
+define('MY_PASSWORD', 'Seu Password');
+define('MY_EMAIL', 'Seu Email');
+
+// // * Banco de Dados
+// define('USER_DB', 'Usuario BD');
+// define('PWD_DB', 'Senha BD');
+
+define('USER_DB', 'Usuario BD');
+define('PWD_DB', 'Senha BD');

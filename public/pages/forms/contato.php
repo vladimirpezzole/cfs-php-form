@@ -1,3 +1,4 @@
+<!-- forms/contato -->
 <?php
 require "../../../bootsstrap.php";
 require "../../../app/functions/credentials.php";
@@ -26,8 +27,8 @@ $data = [
 	'assunto' => $validate->subject,
 ];
 
-// *from credentials.php >> $emailHost, $emailUsername, $emailPassword,$myEmail
-if (send($data, $emailHost, $emailUsername, $emailPassword,$myEmail)) {
+// *CONSTANTS from credentials.php >> 'MY_HOST', 'MY_USERNAME', 'MY_PASSWORD', 'MY_EMAIL'
+if (send($data, MY_HOST, MY_USERNAME, MY_PASSWORD, MY_EMAIL)) {
 	flash('message', 'Email enviado com sucesso', 'success');
 
 	return redirect("contato");

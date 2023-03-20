@@ -7,14 +7,12 @@ if (isEmpty()) {
 
   return redirect("create_user");
 
-} else { 
-  echo 'OK';
-}
+} 
 
 $validate = validate([
   'name' => 's',
   'sobrenome' => 's',
-  'email' => 's',
+  'email' => 'e',
   'password' => 's',
 ]);
 

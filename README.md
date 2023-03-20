@@ -20,8 +20,7 @@
 
 ********************
 *Falta Concluir *
-- Finalizar Acabamentos
-- Configurar Constantes
+- Finalizar Acabamentos e melhorias
 ***********************
 ###++Observações++: 
 
@@ -54,17 +53,21 @@ case 's':
 
 _ _ _
 
-Por **segurança** foi incluido o arquivo **credentials.php** com as variáveis de validação.
+Por **segurança** foi incluído o arquivo **credentials.php** com as CONSTANTES de validação.
 
 Para utilizar renomeie **credentials-sample.php** para **credentials.php**
 e altere as informações conforme for utilizar. 
-*>> depois mudarei para constantes ;) <<*
 
 ```
-$emailHost = 'Seu HOST';
-$emailUsername = 'Seu Username';
-$emailPassword = 'Seu Password';
-$myEmail = 'Seu Email';
+// * To mailtrap.io >> 
+define('MY_HOST', 'Seu HOST');
+define('MY_USERNAME', 'Seu Username');
+define('MY_PASSWORD', 'Seu Password');
+define('MY_EMAIL', 'Seu Email');
+
+// * Banco de Dados
+define('USER_DB', 'Usuário BD');
+define('PWD_DB', 'Senha BD');
 ```
 
 _ _ _

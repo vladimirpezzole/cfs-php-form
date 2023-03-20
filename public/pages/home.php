@@ -1,4 +1,5 @@
-<h2 class="alert alert-primary">HOME</h2>
+<!-- Home -->
+<h2 class="alert alert-primary"><a href="/">Início</a></h2>
 <a href="?page=create_user" class="btn btn-primary">Cadastrar Usuãrio</a>
 <a href="?page=contato" class="btn btn-secondary">Enviar Mensagem</a>
 <br><hr>
