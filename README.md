@@ -19,10 +19,9 @@
 - 13 - PHP para quem entende PHP - COMPLETO
 
 ********************
-*Falta Concluir *
-- Finalizar Acabamentos e melhorias
+[**Falta Concluir **](https://github.com/vladimirpezzole/cfs-php-form/issues)
 ***********************
-####Observações: 
+### Observações: 
 
 
 **FILTER_SANITIZE_STRING** foi *@deprecated* no **PHP 8.1**
