@@ -11,10 +11,6 @@
 - 05 - Tipos de requisição
 - 06 - Validação com Flash Messages
 - 07 - Enviando email com o phpmailer
-
-*Concluidos *
-
-********************
 - 08 - Conexão com o banco de dados usando o PDO
 - 09 - Função de cadastro
 - 10 - Editando registro do banco de dados
@@ -22,8 +18,12 @@
 - 12 - Deletando registro do banco de dados
 - 13 - PHP para quem entende PHP - COMPLETO
 
+********************
+*Falta Concluir *
+- Finalizar Acabamentos
+- Configurar Constantes
 ***********************
-####++Observações++: 
+###++Observações++: 
 
 
 **FILTER_SANITIZE_STRING** foi *@deprecated* no **PHP 8.1**
