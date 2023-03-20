@@ -1,5 +1,6 @@
-<h2>Contato</h2>
-<br>  
+<h2 class="alert alert-primary">Enviar Messagem</h2>
+<a href="?page=home" class="btn btn-info"><b>Home</b></a>
+<hr>
 <?=get('message');?>
 
 <form action="../pages/forms/contato.php" method="POST" role="form">

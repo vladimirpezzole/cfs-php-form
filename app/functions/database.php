@@ -1,5 +1,7 @@
 <?php
 
+use function PHPSTORM_META\sql_injection_subst;
+
 function connect()
 {
   $pdo = new \PDO("mysql:host=localhost;dbname=cfs-php-form;charset=utf8", 'vladimir', 'julia');
@@ -31,9 +33,8 @@ function all($table)
 
   $pdo = connect();
 
-  $sql = "select * from {$table}";
+  $sql = "SELECT * FROM {$table}";
   $list = $pdo->query($sql);
-
   $list->execute();
 
   return $list->fetchAll();
@@ -73,7 +74,7 @@ function find($table, $field, $value)
 
   $value = filter_var($value, FILTER_SANITIZE_NUMBER_INT);
 
-  $sql = "select * from {$table} where {$field} = :{$field}";
+  $sql = "SELECT * FROM {$table} WHERE {$field} = :{$field}";
 
   $find = $pdo->prepare($sql);
   $find->bindValue($field, $value);
@@ -84,11 +85,11 @@ function find($table, $field, $value)
 
 function delete($table, $field, $value)
 {
-  // $pdo = connect();
+  $pdo = connect();
 
-  // $sql = "delete from {$table} where {$field} = :{$field}";
-  // $delete = $pdo->prepare($sql);
-  // $delete->bindValue($field, $value);
+  $sql = "DELETE FROM {$table} WHERE {$field} = :{$field}";
+  $delete = $pdo->prepare($sql);
+  $delete->bindValue($field, $value);
 
-  // return $delete->execute();
+  return $delete->execute();
 }

@@ -1,7 +1,9 @@
-<a href="?page=create_user">Cadastrar User</a>
+<h2 class="alert alert-primary">HOME</h2>
+<a href="?page=create_user" class="btn btn-primary">Cadastrar Usuãrio</a>
+<a href="?page=contato" class="btn btn-secondary">Enviar Mensagem</a>
+<br><hr>
 
-<h2>Pagina Inicial HOME</h2>
-
+<?=get('messege'); ?>
 <table class="table table-striped table-hover">
   <thead>
     <tr>
@@ -13,9 +15,10 @@
     </tr>
   </thead>
   <tbody>
+    
     <?php
     $users = all('users');
-    foreach ($users as $user);
+    foreach ($users as $user):
     ?>
 
     <tr>
@@ -26,10 +29,10 @@
         <a href="?page=edit_user&id=<?=$user->id;?>" class="btn btn-success">Editar</a>
       </td>
       <td>
-        <a href="?page=edit_user&id=<?=$user->id;?>" class="btn btn-danger">Deletar</a>
+        <a href="?page=delete_user&id=<?=$user->id;?>" class="btn btn-danger">Deletar</a>
       </td>
     </tr>
 
-
+    <?php endforeach;?>
   </tbody>
 </table>

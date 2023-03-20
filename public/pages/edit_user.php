@@ -1,4 +1,5 @@
-<h2>Edit User</h2>
+<h2 class="alert alert-primary">Editar Cadastro de Usuário</h2>
+<a href="?page=home" class="btn btn-info"><b>Home</b></a>
 <hr>
 <?=get('message');?>
 
