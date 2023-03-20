@@ -1,5 +1,7 @@
 # cfs-php-form
 # PHP para quem entende PHP - COMPLETO
+Após baixar execute `composer install` ou `composer update`
+***********************
 ### Canal **Clube Full-Stack**
 
 [**Playlist**](https://www.youtube.com/playlist?list=PLyugqHiq-SKehMTK5N3XpKMmdi3JuCNhD/)
@@ -18,7 +20,7 @@
 - 12 - Deletando registro do banco de dados
 - 13 - PHP para quem entende PHP - COMPLETO
 
-********************
+***********************
 [**Falta Concluir **](https://github.com/vladimirpezzole/cfs-php-form/issues)
 ***********************
 ### Observações: 
