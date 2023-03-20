@@ -1,7 +1,6 @@
 <!-- forms/contato -->
 <?php
 require "../../../bootsstrap.php";
-require "../../../app/functions/credentials.php";
 
 if (isEmpty()) {
   flash('message', 'Preencha todos os campos!');

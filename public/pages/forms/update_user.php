@@ -1,6 +1,5 @@
 <?php
 require "../../../bootsstrap.php";
-require "../../../app/functions/credentials.php";
 
 $id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
 

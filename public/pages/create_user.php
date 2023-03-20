@@ -23,7 +23,7 @@
 
   <div class="form-group">
     <label for="">Password</label>
-    <input type="text" name="password" class="form-control" placeholder="Digite seu Password" aria-describedby="helpId">
+    <input type="password" name="password" class="form-control" placeholder="Digite seu Password" aria-describedby="helpId">
   </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>

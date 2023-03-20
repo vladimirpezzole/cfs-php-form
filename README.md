@@ -22,7 +22,7 @@
 *Falta Concluir *
 - Finalizar Acabamentos e melhorias
 ***********************
-###++Observações++: 
+####Observações: 
 
 
 **FILTER_SANITIZE_STRING** foi *@deprecated* no **PHP 8.1**
