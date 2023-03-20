@@ -29,59 +29,57 @@ function create($table, $fields)
 function all($table)
 {
 
-  // $pdo = connect();
+  $pdo = connect();
 
-  // $sql = "select * from {$table}";
-  // $list = $pdo->query($sql);
+  $sql = "select * from {$table}";
+  $list = $pdo->query($sql);
 
-  // $list->execute();
+  $list->execute();
 
-  // return $list->fetchAll();
+  return $list->fetchAll();
 }
 
 function update($table, $fields, $where)
 {
 
-  // if (!is_array($fields)) {
-  //   $fields = (array) $fields;
-  // }
+  if (!is_array($fields)) {
+    $fields = (array) $fields;
+  }
 
-  // $data = array_map(function ($field) {
-  //   return "{$field} = :{$field}";
-  // }, array_keys($fields));
+  $data = array_map(function ($field) {
+    return "{$field} = :{$field}";
+  }, array_keys($fields));
 
-  // $sql = "update {$table} set ";
+  $sql = "UPDATE {$table} SET ";
 
-  // $sql .= implode(',', $data);
+  $sql .= implode(',', $data);
 
-  // $sql .= " where {$where[0]} = :{$where[0]}";
+  $sql .= " WHERE {$where[0]} = :{$where[0]}";
 
-  // $data = array_merge($fields, [$where[0] => $where[1]]);
+  $data = array_merge($fields, [$where[0] => $where[1]]);
 
-  // dd($data);
+  $pdo = connect();
 
-  // $pdo = connect();
+  $update = $pdo->prepare($sql);
 
-  // $update = $pdo->prepare($sql);
+  $update->execute($data);
 
-  // $update->execute($data);
-
-  // return $update->rowCount();
+  return $update->rowCount();
 }
 
 function find($table, $field, $value)
 {
-  // $pdo = connect();
+  $pdo = connect();
 
-  // $value = filter_var($value, FILTER_SANITIZE_NUMBER_INT);
+  $value = filter_var($value, FILTER_SANITIZE_NUMBER_INT);
 
-  // $sql = "select * from {$table} where {$field} = :{$field}";
+  $sql = "select * from {$table} where {$field} = :{$field}";
 
-  // $find = $pdo->prepare($sql);
-  // $find->bindValue($field, $value);
-  // $find->execute();
+  $find = $pdo->prepare($sql);
+  $find->bindValue($field, $value);
+  $find->execute();
 
-  // return $find->fetch();
+  return $find->fetch();
 }
 
 function delete($table, $field, $value)
