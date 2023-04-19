@@ -1,6 +1,22 @@
 # cfs-php-form
 # PHP para quem entende PHP - COMPLETO
+
+
+Para instalar tenha o GIT instalado e clone o repositório:
+
+```bash
+git clone https://github.com/vladimirpezzole/cfs-php-form.git
+```
+
+Depois verifique as configurações do **Docker Compose**, **Dockerfile** e as variáveis em **.env** e execute:
+
+```bash
+docker compose up -d
+```
+*Obs. se a versão do **Docker CLI versão 2.0.0**, for anterior, use >> **`docker-compose`** com hífen(-).*
+
 Após baixar execute `composer install` ou `composer update`
+
 ***********************
 ### Canal **Clube Full-Stack**
 
